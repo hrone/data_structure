@@ -43,3 +43,9 @@ function unique1(arr) {
 
 unique1([ new String(1), new Number(1) ])
 可以继续修改代码，做到性能和正确性都很好。但往往，这带来的结果并不好。*/
+
+//es6快速去重
+let newArr1=Array.from(new Set(arr));
+let newArr2=[...new Set(arr)];
+console.log(newArr1);
+console.log(newArr2);
